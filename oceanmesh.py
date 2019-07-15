@@ -11,10 +11,12 @@ import numpy as np
 def round_trip_connect(start, end):
         """
         Parameters:
-            start: First point of sequence
-            end: Last point of sequence
+            start: Float.
+            First point of sequence
+            end: Float.
+            Last point of sequence
         Returns:
-            Facets
+            Facets: List of tuples
         Start and End of linering. Used to create a sequence of points."""
         return [(i, i+1) for i in range(start, end)] + [(end, start)]
         
