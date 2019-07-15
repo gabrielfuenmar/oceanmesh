@@ -10,27 +10,29 @@ import numpy as np
 
 def round_trip_connect(start, end):
         """
-        Input:
+        Parameters:
             start: First point of sequence
             end: Last point of sequence
-        Output:
+        Returns:
             Facets
         Start and End of linering. Used to create a sequence of points."""
         return [(i, i+1) for i in range(start, end)] + [(end, start)]
         
 def triang_export(path_to_ocean_scale,polygon_nu):
-    """ Input: 
+    """ Parameters: 
             path_to_ocean_scale:File name or path to IHO World Seas shapefile as 
             distributed in marineregions.org by Flanders Marine Institute. No 
             direct download is permitted as per License, hence no direct 
             availability through code. 
             Download the latest shapefile and use as input for this code.
             
-            polygon_nu:The polygon number as defined in the IHO World Seas 
+            polygon_nu: Integer
+            
+            The polygon number as defined in the IHO World Seas 
             Shapefile from 0 to 21.
         
-        Output: 
-            File of Array of Numpy Array that includes an array of the 
+        Returns: 
+            File of Numpy Arrays that includes an array of the 
             points and an array of the point combinations by index, that creates 
             every triangle mesh.
         
