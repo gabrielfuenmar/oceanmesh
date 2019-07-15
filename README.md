@@ -13,23 +13,24 @@ Dependencies:
       numpy 1.16.4
       meshpy 2018.2.1
 
-Input: 
+Parameters: 
+
+      path_to_ocean_scale:File name or path to IHO World Seas shapefile as 
+      distributed in marineregions.org by Flanders Marine Institute. No 
+      direct download is permitted as per License, hence no direct 
+      availability through code. 
+      Requires download with the latest shapefile.
       
-  path_to_ocean_scale: File name or path to IHO World Seas shapefile as 
-  distributed in marineregions.org by Flanders Marine Institute. No 
-  direct download is permitted as per License, hence no direct 
-  availability through code. 
-  Download the latest shapefile and use as input for this code.
-  
-  polygon_nu: The polygon number as defined in the IHO World Seas 
-  Shapefile from 0 to 21.
+      polygon_nu: Integer
+      The polygon number as defined in the IHO World Seas 
+      Shapefile from 0 to 21.
 
-Output: 
-  
-  File of Array of Numpy Arrays (.npz) that includes an array of 
-  points (lon,lat) and an array of the point combinations by index that creates 
-  every triangle mesh.
+Returns: 
 
+      File of Numpy Arrays that includes an array of the 
+      points and an array of the point combinations by index, that creates 
+      every triangle mesh.
+            
 Code development:
   
   1. A shapefile with the IHO world seas polygons is read.
