@@ -8,9 +8,10 @@ Utilizes IHO Oceans shapefile (Flanders Marine Institute (2018). IHO Sea Areas, 
 The code doesn't include the shapefile as per Licence requirements by Flanders Marine Institute. The file could be downloaded for free at http://www.marineregions.org/downloads.php then IHO Sea Areas.
 
 Dependencies: 
-geopandas 0.5.0
-numpy 1.16.4
-meshpy 2018.2.1
+
+      geopandas 0.5.0
+      numpy 1.16.4
+      meshpy 2018.2.1
 
 Input: 
       
@@ -25,8 +26,8 @@ Input:
 
 Output: 
   
-  File of Array of Numpy Array that includes an array of the 
-  points and an array of the point combinations by index, that creates 
+  File of Array of Numpy Arrays (.npz) that includes an array of 
+  points (lon,lat) and an array of the point combinations by index that creates 
   every triangle mesh.
 
 Code development:
