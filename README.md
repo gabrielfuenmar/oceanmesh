@@ -3,7 +3,7 @@
 A module that generates feasible oceanic routes for vessels to be used as input for routing and network problems.
 Utilizes IHO Oceans shapefile (Flanders Marine Institute (2018). IHO Sea Areas, version 3) and produces triangle meshes for the routes vessels could use.
 
-Disclaimer: The routes are not intended to be used for navigation purposes. No responsibility will be taken by the author in this regard.
+**Disclaimer: The routes are not intended to be used for navigation purposes. No responsibility will be taken by the author in this regard.**
 
 The code doesn't include the shapefile as per Licence requirements by Flanders Marine Institute. The file could be downloaded for free at http://www.marineregions.org/downloads.php then IHO Sea Areas.
 
